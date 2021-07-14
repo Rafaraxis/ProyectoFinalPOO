@@ -6,24 +6,25 @@ using System.Threading.Tasks;
 
 namespace Netflix
 {
-    class Pelicula
+    class Pelicula : Cartelera
     {
-        public string Titulo { get; set; }
-        public int Year { get; set; }
         public string Genero { get; set; }
         public string Director { get; set; }
 
-        public List<Serie> Carteleras { get; set; }
         public Pelicula()
         {
-            Carteleras = new List<Serie>();
+
         }
 
         public void chilo()
         {
-            Console.WriteLine("Pelicula");
+            Console.WriteLine("NETFLIX \n");
         }
 
-
+        //public List<Pelicula> Peliculas { get; set; }
+        //public Pelicula()
+        //{
+        //    Peliculas = new List<Pelicula>();
+        //}
     }
 }

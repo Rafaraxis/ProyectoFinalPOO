@@ -6,11 +6,20 @@ using System.Threading.Tasks;
 
 namespace Netflix
 {
-    class Serie
+    class Serie : Cartelera
     {
-        public string Titulo { get; set; }
-        public int Year { get; set; }
         public int Temporada { get; set; }
         public string Cadena { get; set; }
+
+        public Serie()
+        {
+           
+        }
+
+        //public List<Serie> Series { get; set; }
+        //public Serie()
+        //{
+        //    Series = new List<Serie>();
+        //}
     }
 }
