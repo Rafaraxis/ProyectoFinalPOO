@@ -17,6 +17,9 @@ namespace Netflix
             // Polimorfismo
             Serie serieClase = new Serie();
             Pelicula peliculaClase = new Pelicula();
+
+            Cartelera series = new Serie();
+            Cartelera peliculas = new Pelicula();
             // Ciclo DO hasta que le de click al 6 para cerrar programa
             do
             {
@@ -57,17 +60,22 @@ namespace Netflix
                         listaCartelera.Add(new Cartelera { Titulo = peliculaClase.Titulo, Year = peliculaClase.Year, Tipo = "Pelicula" });
                         break;
                     case 3:
-                        foreach (Cartelera cartelera in listaCartelera)
-                        {
-                            if(cartelera.Tipo == "Serie")
-                            {
-                                Console.WriteLine("_____________________________________________________\n");
-                               
-                                ((Serie)(cartelera)).imprimir();
-                                //Console.WriteLine("Titulo:" + cartelera.Titulo + " Año:" + cartelera.Year + " Temporada:" + serieClase.Temporada + " Cadena:" + serieClase.Cadena);
-                                Console.WriteLine("_____________________________________________________\n");
-                            }
-                        }
+                        series.Titulo = "hola";
+                        series.Titulo = "hola2";
+
+                        ((Serie)(series)).imprimir();
+                        //foreach (Cartelera cartelera in listaCartelera)
+                        //{
+
+                        //    if (cartelera.Tipo == "Serie")
+                        //    {
+                        //        Console.WriteLine("_____________________________________________________\n");
+
+
+                        //        //Console.WriteLine("Titulo:" + cartelera.Titulo + " Año:" + cartelera.Year + " Temporada:" + serieClase.Temporada + " Cadena:" + serieClase.Cadena);
+                        //        Console.WriteLine("_____________________________________________________\n");
+                        //    }
+                        //}
                         break;
                     case 4:
                         foreach (Cartelera cartelera in listaCartelera)
