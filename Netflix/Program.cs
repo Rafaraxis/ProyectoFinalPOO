@@ -63,19 +63,19 @@ namespace Netflix
                         series.Titulo = "hola";
                         series.Titulo = "hola2";
 
-                        ((Serie)(series)).imprimir();
-                        //foreach (Cartelera cartelera in listaCartelera)
-                        //{
+                        
+                        foreach (Cartelera cartelera in listaCartelera)
+                        {
+                            ((Serie)(series)).imprimir();
+                            //    if (cartelera.Tipo == "Serie")
+                            //    {
+                            //        Console.WriteLine("_____________________________________________________\n");
 
-                        //    if (cartelera.Tipo == "Serie")
-                        //    {
-                        //        Console.WriteLine("_____________________________________________________\n");
 
-
-                        //        //Console.WriteLine("Titulo:" + cartelera.Titulo + " Año:" + cartelera.Year + " Temporada:" + serieClase.Temporada + " Cadena:" + serieClase.Cadena);
-                        //        Console.WriteLine("_____________________________________________________\n");
-                        //    }
-                        //}
+                            //        //Console.WriteLine("Titulo:" + cartelera.Titulo + " Año:" + cartelera.Year + " Temporada:" + serieClase.Temporada + " Cadena:" + serieClase.Cadena);
+                            //        Console.WriteLine("_____________________________________________________\n");
+                            //    }
+                        }
                         break;
                     case 4:
                         foreach (Cartelera cartelera in listaCartelera)

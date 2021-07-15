@@ -10,10 +10,9 @@ namespace Netflix
     {
         public int Temporada { get; set; }
         public string Cadena { get; set; }
-
         public void imprimir()
         {
-            Console.WriteLine("Titulo:" + Titulo + " Año:" + Year + " Temporada:" + Temporada + " Cadena:" + Cadena);
+            Console.WriteLine("Titulo:" + this.Titulo + " Año:" + this.Year + " Temporada:" + this.Temporada + " Cadena:" + this.Cadena);
         }
         //public List<Serie> Series { get; set; }
         //public Serie()
