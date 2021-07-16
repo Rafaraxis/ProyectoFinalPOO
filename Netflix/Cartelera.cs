@@ -12,6 +12,8 @@ namespace Netflix
         public int Year { get; set; }
         public string Tipo { get; set; }
 
+
+
         public List<Cartelera> Carteleras { get; set; }
         public Cartelera()
         {

@@ -21,6 +21,11 @@ namespace Netflix
             Console.WriteLine("NETFLIX \n");
         }
 
+        public void imprimir()
+        {
+            Console.WriteLine("Titulo:" + this.Titulo + " Año:" + this.Year + "Genero:" + this.Genero + "Director:" + this.Director);
+        }
+
         //public List<Pelicula> Peliculas { get; set; }
         //public Pelicula()
         //{

@@ -14,6 +14,13 @@ namespace Netflix
         {
             Console.WriteLine("Titulo:" + this.Titulo + " Año:" + this.Year + " Temporada:" + this.Temporada + " Cadena:" + this.Cadena);
         }
+<<<<<<< Updated upstream
+=======
+        public void imprimir()
+        {
+            Console.WriteLine("Titulo:" + this.Titulo + " Año:" + this.Year + " Temporada:" + this.Temporada + " Cadena:" + this.Cadena);
+        }
+>>>>>>> Stashed changes
         //public List<Serie> Series { get; set; }
         //public Serie()
         //{

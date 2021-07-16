@@ -45,7 +45,7 @@ namespace Netflix
                         Console.WriteLine("Cadena:");
                         serieClase.Cadena = Console.ReadLine();
                         // Lista de Series Guardar
-                        listaCartelera.Add(new Cartelera { Titulo = serieClase.Titulo, Year = serieClase.Year, Tipo = "Serie"});
+                        listaCartelera.Add(new Serie { Titulo = serieClase.Titulo, Year = serieClase.Year, Tipo = "Serie", Cadena = serieClase.Cadena, Temporada = serieClase.Temporada});
                         break;
                     case 2:
                         Console.WriteLine("Titulo:");
@@ -57,7 +57,7 @@ namespace Netflix
                         Console.WriteLine("Director:");
                         peliculaClase.Director = Console.ReadLine();
                         //Lista de Peliculas Guardar
-                        listaCartelera.Add(new Cartelera { Titulo = peliculaClase.Titulo, Year = peliculaClase.Year, Tipo = "Pelicula" });
+                        listaCartelera.Add(new Pelicula { Titulo = peliculaClase.Titulo, Year = peliculaClase.Year, Tipo = "Pelicula", Genero = peliculaClase.Genero, Director = peliculaClase.Director});
                         break;
                     case 3:
                         series.Titulo = "hola";
@@ -66,6 +66,7 @@ namespace Netflix
                         
                         foreach (Cartelera cartelera in listaCartelera)
                         {
+<<<<<<< Updated upstream
                             ((Serie)(series)).imprimir();
                             //    if (cartelera.Tipo == "Serie")
                             //    {
@@ -75,6 +76,16 @@ namespace Netflix
                             //        //Console.WriteLine("Titulo:" + cartelera.Titulo + " Año:" + cartelera.Year + " Temporada:" + serieClase.Temporada + " Cadena:" + serieClase.Cadena);
                             //        Console.WriteLine("_____________________________________________________\n");
                             //    }
+=======
+                            if(cartelera.Tipo == "Serie")
+                            {
+                                Console.WriteLine("_____________________________________________________\n");
+                               
+                                ((Serie)(cartelera)).imprimir();
+                                //Console.WriteLine("Titulo:" + cartelera.Titulo + " Año:" + cartelera.Year + " Temporada:" + serieClase.Temporada + " Cadena:" + serieClase.Cadena);
+                                Console.WriteLine("_____________________________________________________\n");
+                            }
+>>>>>>> Stashed changes
                         }
                         break;
                     case 4:
@@ -83,7 +94,8 @@ namespace Netflix
                             if (cartelera.Tipo == "Pelicula")
                             {
                                 Console.WriteLine("_____________________________________________________\n");
-                                Console.WriteLine("Titulo:" + cartelera.Titulo + " Año:" + cartelera.Year + " Género:" + peliculaClase.Genero + " Director:" + peliculaClase.Director);
+                                ((Pelicula)(cartelera)).imprimir();
+                                //Console.WriteLine("Titulo:" + cartelera.Titulo + " Año:" + cartelera.Year + " Género:" + peliculaClase.Genero + " Director:" + peliculaClase.Director);
                                 Console.WriteLine("_____________________________________________________\n");
                             }
                         }
